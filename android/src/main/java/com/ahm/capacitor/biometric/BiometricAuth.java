@@ -13,10 +13,10 @@ import androidx.biometric.BiometricConstants;
 import androidx.biometric.BiometricManager;
 
 import com.getcapacitor.JSObject;
-import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+import com.getcapacitor.annotation.CapacitorPlugin;
 
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
@@ -27,7 +27,7 @@ import java.security.cert.CertificateException;
 
 import javax.crypto.KeyGenerator;
 
-@NativePlugin()
+@CapacitorPlugin(name = "BiometricAuth")
 public class BiometricAuth extends Plugin {
 
     private CancellationSignal cancellationSignal;
